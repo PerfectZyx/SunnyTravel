@@ -46,15 +46,19 @@ flutter:
    - images/dali.jpg
    - images/qinghai.jpg
    - images/tianjin.jpg
+   - images/splash.jpg
    - images/2.0x/dali.jpg
    - images/2.0x/qinghai.jpg
    - images/2.0x/tianjin.jpg
+   - images/2.0x/splash.jpg
    - images/3.0x/dali.jpg
    - images/3.0x/qinghai.jpg
    - images/3.0x/tianjin.jpg
+   - images/3.0x/splash.jpg
    - images/4.0x/dali.jpg
    - images/4.0x/qinghai.jpg
    - images/4.0x/tianjin.jpg
+   - images/4.0x/splash.jpg
    
 
   # An image asset can refer to one or more resolution-specific "variants", see
