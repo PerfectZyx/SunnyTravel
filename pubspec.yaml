@@ -47,18 +47,150 @@ flutter:
    - images/qinghai.jpg
    - images/tianjin.jpg
    - images/splash.jpg
+   - images/als2.jpg
+   - images/am2.jpg
+   - images/bj.jpg
+   - images/bj2.jpg
+   - images/cd2.jpg
+   - images/cq.jpg
+   - images/dh2.jpg
+   - images/dl.jpg
+   - images/dl2.jpg
+   - images/gl.jpg
+   - images/hgs2.jpg
+   - images/hk.jpg
+   - images/hlbe2.jpg
+   - images/hz.jpg
+   - images/km2.jpg
+   - images/lj.jpg
+   - images/ls.jpg
+   - images/mh.jpg
+   - images/qd.jpg
+   - images/qh.jpg
+   - images/sh.jpg
+   - images/snj2.jpg
+   - images/sy.jpg
+   - images/sz.jpg
+   - images/tb.jpg
+   - images/tj.jpg
+   - images/wts2.jpg
+   - images/wy.jpg
+   - images/wys2.jpg
+   - images/xian.jpg
+   - images/xm.jpg
+   - images/yz2.jpg
+   - images/zjj.jpg
    - images/2.0x/dali.jpg
    - images/2.0x/qinghai.jpg
    - images/2.0x/tianjin.jpg
    - images/2.0x/splash.jpg
+   - images/2.0x/als2.jpg
+   - images/2.0x/am2.jpg
+   - images/2.0x/bj.jpg
+   - images/2.0x/bj2.jpg
+   - images/2.0x/cd2.jpg
+   - images/2.0x/cq.jpg
+   - images/2.0x/dh2.jpg
+   - images/2.0x/dl.jpg
+   - images/2.0x/dl2.jpg
+   - images/2.0x/gl.jpg
+   - images/2.0x/hgs2.jpg
+   - images/2.0x/hk.jpg
+   - images/2.0x/hlbe2.jpg
+   - images/2.0x/hz.jpg
+   - images/2.0x/km2.jpg
+   - images/2.0x/lj.jpg
+   - images/2.0x/ls.jpg
+   - images/2.0x/mh.jpg
+   - images/2.0x/qd.jpg
+   - images/2.0x/qh.jpg
+   - images/2.0x/sh.jpg
+   - images/2.0x/snj2.jpg
+   - images/2.0x/sy.jpg
+   - images/2.0x/sz.jpg
+   - images/2.0x/tb.jpg
+   - images/2.0x/tj.jpg
+   - images/2.0x/wts2.jpg
+   - images/2.0x/wy.jpg
+   - images/2.0x/wys2.jpg
+   - images/2.0x/xian.jpg
+   - images/2.0x/xm.jpg
+   - images/2.0x/yz2.jpg
+   - images/2.0x/zjj.jpg
    - images/3.0x/dali.jpg
    - images/3.0x/qinghai.jpg
    - images/3.0x/tianjin.jpg
    - images/3.0x/splash.jpg
+   - images/3.0x/als2.jpg
+   - images/3.0x/am2.jpg
+   - images/3.0x/bj.jpg
+   - images/3.0x/bj2.jpg
+   - images/3.0x/cd2.jpg
+   - images/3.0x/cq.jpg
+   - images/3.0x/dh2.jpg
+   - images/3.0x/dl.jpg
+   - images/3.0x/dl2.jpg
+   - images/3.0x/gl.jpg
+   - images/3.0x/hgs2.jpg
+   - images/3.0x/hk.jpg
+   - images/3.0x/hlbe2.jpg
+   - images/3.0x/hz.jpg
+   - images/3.0x/km2.jpg
+   - images/3.0x/lj.jpg
+   - images/3.0x/ls.jpg
+   - images/3.0x/mh.jpg
+   - images/3.0x/qd.jpg
+   - images/3.0x/qh.jpg
+   - images/3.0x/sh.jpg
+   - images/3.0x/snj2.jpg
+   - images/3.0x/sy.jpg
+   - images/3.0x/sz.jpg
+   - images/3.0x/tb.jpg
+   - images/3.0x/tj.jpg
+   - images/3.0x/wts2.jpg
+   - images/3.0x/wy.jpg
+   - images/3.0x/wys2.jpg
+   - images/3.0x/xian.jpg
+   - images/3.0x/xm.jpg
+   - images/3.0x/yz2.jpg
+   - images/3.0x/zjj.jpg
    - images/4.0x/dali.jpg
    - images/4.0x/qinghai.jpg
    - images/4.0x/tianjin.jpg
    - images/4.0x/splash.jpg
+   - images/4.0x/als2.jpg
+   - images/4.0x/am2.jpg
+   - images/4.0x/bj.jpg
+   - images/4.0x/bj2.jpg
+   - images/4.0x/cd2.jpg
+   - images/4.0x/cq.jpg
+   - images/4.0x/dh2.jpg
+   - images/4.0x/dl.jpg
+   - images/4.0x/dl2.jpg
+   - images/4.0x/gl.jpg
+   - images/4.0x/hgs2.jpg
+   - images/4.0x/hk.jpg
+   - images/4.0x/hlbe2.jpg
+   - images/4.0x/hz.jpg
+   - images/4.0x/km2.jpg
+   - images/4.0x/lj.jpg
+   - images/4.0x/ls.jpg
+   - images/4.0x/mh.jpg
+   - images/4.0x/qd.jpg
+   - images/4.0x/qh.jpg
+   - images/4.0x/sh.jpg
+   - images/4.0x/snj2.jpg
+   - images/4.0x/sy.jpg
+   - images/4.0x/sz.jpg
+   - images/4.0x/tb.jpg
+   - images/4.0x/tj.jpg
+   - images/4.0x/wts2.jpg
+   - images/4.0x/wy.jpg
+   - images/4.0x/wys2.jpg
+   - images/4.0x/xian.jpg
+   - images/4.0x/xm.jpg
+   - images/4.0x/yz2.jpg
+   - images/4.0x/zjj.jpg
    
 
   # An image asset can refer to one or more resolution-specific "variants", see
