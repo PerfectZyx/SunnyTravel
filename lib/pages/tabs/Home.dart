@@ -56,17 +56,24 @@ class _SwiperPageState extends State<SwiperPage> {
             Row(
               children: <Widget>[
                  ImageButton(
-                  children: <Widget>[],
+                  children: <Widget>[
+                    Text(
+                      '婺源之旅',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
                   width: 200,
                   height: 140,
                   paddingTop: 5,
-                  title: 'Lijiang',
-                  normalStyle: TextStyle(color: Colors.black, fontSize: 14, decoration: TextDecoration.none),
                   pressedImage: Image.asset(
-                    "images/lj.jpg",
+                    "images/wy.jpg",
                   ),
                   unpressedImage: Image.asset(
-                    "images/lj.jpg"
+                    "images/wy.jpg"
                   ),
                   onTap: () {
                     print('test');
@@ -82,17 +89,24 @@ class _SwiperPageState extends State<SwiperPage> {
                   ),
                 ),
                 ImageButton(
-                  children: <Widget>[],
+                  children: <Widget>[
+                    Text(
+                      '漠河之旅',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
                   width: 200,
                   height: 140,
                   paddingTop: 5,
-                  title: 'Zhangjiajie',
-                  normalStyle: TextStyle(color: Colors.black, fontSize: 14, decoration: TextDecoration.none),
                   pressedImage: Image.asset(
-                    "images/zjj.jpg",
+                    "images/mh.jpg",
                   ),
                   unpressedImage: Image.asset(
-                    "images/zjj.jpg"
+                    "images/mh.jpg"
                   ),
                   onTap: () {
                     print('test');
@@ -110,12 +124,19 @@ class _SwiperPageState extends State<SwiperPage> {
             Row(
               children: <Widget>[
                  ImageButton(
-                  children: <Widget>[],
+                  children: <Widget>[
+                    Text(
+                      '拉萨之旅',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
                   width: 200,
                   height: 140,
                   paddingTop: 5,
-                  title: 'Lasa',
-                  normalStyle: TextStyle(color: Colors.black, fontSize: 14, decoration: TextDecoration.none),
                   pressedImage: Image.asset(
                     "images/ls.jpg",
                   ),
@@ -136,17 +157,24 @@ class _SwiperPageState extends State<SwiperPage> {
                   ),
                 ),
                 ImageButton(
-                  children: <Widget>[],
+                  children: <Widget>[
+                    Text(
+                      '上海之旅',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
                   width: 200,
                   height: 140,
                   paddingTop: 5,
-                  title: 'Guilin',
-                  normalStyle: TextStyle(color: Colors.black, fontSize: 14, decoration: TextDecoration.none),
                   pressedImage: Image.asset(
-                    "images/gl.jpg",
+                    "images/sh.jpg",
                   ),
                   unpressedImage: Image.asset(
-                    "images/gl.jpg"
+                    "images/sh.jpg"
                   ),
                   onTap: () {
                     print('test');
