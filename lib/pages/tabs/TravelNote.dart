@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sunnytravel_app/components/ImageButton.dart';
-import 'package:sunnytravel_app/utils/packages.dart';
+import 'package:sunnytravel_app/utils/note.dart';
 import 'package:sunnytravel_app/pages/NoteDetail.dart';
 
 class TravelNotePage extends StatefulWidget {
@@ -31,7 +31,7 @@ class _TravelNotePageState extends State<TravelNotePage> {
             context,
             MaterialPageRoute(
                 builder: (context) =>
-                    new TravalNoteDetail(package: travelNoteList[index])));
+                    new TravalNoteDetail(note: travelNoteList[index])));
       },
     );
   }
