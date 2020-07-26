@@ -1,8 +1,11 @@
 class Package{
   final String img;  //图片
   final String title;  //标题
-  final String description;  //描述
-  Package(this.img,this.title,this.description);
+  final String description;  //游记描述
+  final String virus; //疫情情况
+  final String region; //地区
+  final String season; //季节
+  Package(this.img,this.title,this.description,this.virus,this.region,this.season);
 }
 List packageNoteList = [
    Package("images/bj.jpg","北京之旅","Day 01: 天安门广场(1.5小时) → 故宫(3小时) → 景山公园(1小时) → 北京全聚德(前门店)(1小时) \n Day 02: 雍和宫(2小时) → 孔庙和国子监博物馆(1.5小时) → 五道营胡同(1小时) → 簋街(2小时) \n Day 03: 恭王府(2.5小时) → 什刹海(3小时) → 南锣鼓巷(机动选择，1.5小时) \n Day 04: 天坛公园(2小时) → 鸟巢(0.5小时) → 水立方(0.5小时) \n Day 05: 北京798艺术区(3小时) → 三里屯太古里(2小时) \n Day 06: 圆明园(3小时) → 清华大学(2小时) \n Day 07: 颐和园(4小时) → 北京大学(2小时) \n Day 08: 八达岭长城(3-4小时) → 明十三陵(机动选择，2.5小时)"),
