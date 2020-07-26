@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'tabs/Home.dart';
 import 'tabs/Season.dart';
 import 'tabs/Region.dart';
+import 'tabs/TravelNote.dart';
+import 'tabs/About.dart';
 
 class Tabs extends StatefulWidget {
   Tabs({Key key}) : super(key: key);
@@ -13,7 +15,7 @@ class Tabs extends StatefulWidget {
 class _TabsState extends State<Tabs> {
   @override
   int _currentIndex = 0;
-  List _pageList = [SwiperPage(), SeasonPage(), RegionPage()];
+  List _pageList = [SwiperPage(), SeasonPage(), RegionPage(), TravelNotePage(), AboutPage()];
 
   Widget build(BuildContext context) {
     return Container(
@@ -31,22 +33,16 @@ class _TabsState extends State<Tabs> {
               this._currentIndex = index;
             });
           },
-          //iconSize: 25.0,      //icon大小
-          //fixedColor: Colors.red      //选中的颜色,
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('主页')),
             BottomNavigationBarItem(
-              icon: Icon(Icons.wb_sunny),
-              title: Text('季节推荐')
-            ),
+                icon: Icon(Icons.wb_sunny), title: Text('季节推荐')),
             BottomNavigationBarItem(
-              icon: Icon(Icons.landscape),
-              title: Text('地区推荐')
-            ),
+                icon: Icon(Icons.landscape), title: Text('地区推荐')),
             BottomNavigationBarItem(
-              icon: Icon(Icons.toys),
-              title: Text('用户游记')
-            ),
+                icon: Icon(Icons.toys), title: Text('用户游记')),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.perm_identity), title: Text('关于我们')),
           ],
           type: BottomNavigationBarType.fixed,
         ),
