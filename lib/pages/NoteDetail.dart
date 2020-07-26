@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:sunnytravel_app/utils/note.dart';
+import 'package:sunnytravel_app/utils/packages.dart';
 
 class TravalNoteDetail extends StatelessWidget {
-  final Note note;
-  TravalNoteDetail({Key key, @required this.note}) : super(key: key);
+  final Package package;
+  TravalNoteDetail({Key key, @required this.package}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return new Scaffold(
         appBar: AppBar(
-          title: Text('${note.title}'),
+          title: Text('${package.title}'),
         ),
         body: SingleChildScrollView(child: new Column(
           children: <Widget>[
             Container(
                 height: 200,
                 width: 534,
-                child: Image.asset('${note.img}', fit: BoxFit.fill)),
+                child: Image.asset('${package.img}', fit: BoxFit.fill)),
             Container(
               width: size.width,
               child: Text('用户游记：',
@@ -26,7 +26,7 @@ class TravalNoteDetail extends StatelessWidget {
             ),
             Container(
               width: size.width,
-              child: Text('${note.description}',
+              child: Text('${package.description}',
                   textAlign: TextAlign.left, style: TextStyle(fontSize: 16.0)),
             ),
           ],
