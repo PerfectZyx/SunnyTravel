@@ -80,6 +80,7 @@ flutter:
    - images/xm.jpg
    - images/yz2.jpg
    - images/zjj.jpg
+   - images/mylogo.jpg
    - images/spring.jpg
    - images/summer.jpg
    - images/autumn.jpg
@@ -141,6 +142,7 @@ flutter:
    - images/2.0x/northeast.jpg
    - images/2.0x/southwest.jpg
    - images/2.0x/northwest.jpg
+   - images/2.0x/mylogo.jpg
    - images/3.0x/dali.jpg
    - images/3.0x/qinghai.jpg
    - images/3.0x/tianjin.jpg
@@ -190,6 +192,7 @@ flutter:
    - images/3.0x/northeast.jpg
    - images/3.0x/southwest.jpg
    - images/3.0x/northwest.jpg
+   - images/3.0x/mylogo.jpg
    - images/4.0x/dali.jpg
    - images/4.0x/qinghai.jpg
    - images/4.0x/tianjin.jpg
@@ -239,6 +242,7 @@ flutter:
    - images/4.0x/northeast.jpg
    - images/4.0x/southwest.jpg
    - images/4.0x/northwest.jpg
+   - images/4.0x/mylogo.jpg
 
 
  # An image asset can refer to one or more resolution-specific "variants", see
