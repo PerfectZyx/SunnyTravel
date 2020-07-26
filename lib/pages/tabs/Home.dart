@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:sunnytravel_app/components/ImageButton.dart';
+import 'package:sunnytravel_app/packages/Wuyuan.dart';
+import 'package:sunnytravel_app/packages/Mohe.dart';
+import 'package:sunnytravel_app/packages/Lasa.dart';
+import 'package:sunnytravel_app/packages/Shanghai.dart';
 
 class SwiperPage extends StatefulWidget {
   SwiperPage({Key key}) : super(key: key);
@@ -18,19 +22,9 @@ class _SwiperPageState extends State<SwiperPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // appBar: AppBar(
-        //   title: Text('主页'),
-        // ),
         body: Column(
           children: <Widget>[
-            // Row(
-            //   children: <Widget>[
-            //     Text("SunnyTravel")
-            //   ],
-            // ),
             Container(
-              //width: double.infinity,
-              //height: 300,
               child: AspectRatio(
                 aspectRatio: 16/9,
                 child: Swiper(
@@ -42,7 +36,6 @@ class _SwiperPageState extends State<SwiperPage> {
                 pagination: new SwiperPagination(),
                 autoplay: true,
                 loop: true,
-                //control: new SwiperControl(),
               ),
               )
             ),
@@ -76,7 +69,13 @@ class _SwiperPageState extends State<SwiperPage> {
                     "images/wy.jpg"
                   ),
                   onTap: () {
-                    print('test');
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (BuildContext context){
+                          return WuyuanPage();
+                        }
+                      )
+                    );
                   },
                 ),
                 SizedBox(
@@ -109,7 +108,13 @@ class _SwiperPageState extends State<SwiperPage> {
                     "images/mh.jpg"
                   ),
                   onTap: () {
-                    print('test');
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (BuildContext context){
+                          return MohePage();
+                        }
+                      )
+                    );
                   },
                 ),
               ],
@@ -144,7 +149,13 @@ class _SwiperPageState extends State<SwiperPage> {
                     "images/ls.jpg"
                   ),
                   onTap: () {
-                    print('test');
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (BuildContext context){
+                          return LasaPage();
+                        }
+                      )
+                    );
                   },
                 ),
                 SizedBox(
@@ -177,7 +188,13 @@ class _SwiperPageState extends State<SwiperPage> {
                     "images/sh.jpg"
                   ),
                   onTap: () {
-                    print('test');
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (BuildContext context){
+                          return ShanghaiPage();
+                        }
+                      )
+                    );
                   },
                 ),
               ],
