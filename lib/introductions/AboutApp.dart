@@ -57,7 +57,7 @@ class AboutappPage extends StatelessWidget {
             ),
             Container(
               width: size.width,
-              child: Text('技术架构',
+              child: Text('-技术架构',
                   textAlign: TextAlign.left,
                   style:
                       TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500)),
@@ -76,7 +76,7 @@ class AboutappPage extends StatelessWidget {
             ),
             Container(
               width: size.width,
-              child: Text('好在哪里',
+              child: Text('-好在哪里',
                   textAlign: TextAlign.left,
                   style:
                       TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500)),
@@ -97,7 +97,7 @@ class AboutappPage extends StatelessWidget {
             ),
             Container(
               width: size.width,
-              child: Text('不足之处',
+              child: Text('-不足之处',
                   textAlign: TextAlign.left,
                   style:
                       TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500)),
