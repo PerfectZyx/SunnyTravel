@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sunnytravel_app/pages/SearchArticle.dart';
 import 'tabs/Home.dart';
 import 'tabs/Season.dart';
 import 'tabs/Region.dart';
@@ -15,7 +16,7 @@ class Tabs extends StatefulWidget {
 class _TabsState extends State<Tabs> {
   @override
   int _currentIndex = 0;
-  List _pageList = [SwiperPage(), SeasonPage(), RegionPage(), TravelNotePage(), AboutPage()];
+  List _pageList = [SwiperPage(), SeasonPage(), RegionPage(), SearchArticle(searchKey: ["","","1","游记"],), AboutPage()];
 
   Widget build(BuildContext context) {
     return Container(

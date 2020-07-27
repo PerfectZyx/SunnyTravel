@@ -52,7 +52,7 @@ class _SearchArticle extends State<SearchArticle> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+        appBar: this.name == "游记" ? null : AppBar(
           title: Text(name),
         ),
         body: Padding(
