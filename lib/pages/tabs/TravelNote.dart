@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sunnytravel_app/components/ImageButton.dart';
-import 'package:sunnytravel_app/utils/packages.dart';
+import 'package:sunnytravel_app/utils/note.dart';
 import 'package:sunnytravel_app/pages/NoteDetail.dart';
 
 class TravelNotePage extends StatefulWidget {
@@ -14,7 +14,7 @@ class _TravelNotePageState extends State<TravelNotePage> {
     return ImageButton(
       children: <Widget>[
         Text(
-          packageList[index].title,
+          travelNoteList[index].title,
           style: TextStyle(
             color: Colors.white,
             fontSize: 30,
@@ -24,14 +24,14 @@ class _TravelNotePageState extends State<TravelNotePage> {
       ],
       width: 250,
       height: 190,
-      pressedImage: Image.asset(packageList[index].img, fit: BoxFit.cover),
-      unpressedImage: Image.asset(packageList[index].img, fit: BoxFit.cover),
+      pressedImage: Image.asset(travelNoteList[index].img, fit: BoxFit.cover),
+      unpressedImage: Image.asset(travelNoteList[index].img, fit: BoxFit.cover),
       onTap: () {
         Navigator.push(
             context,
             MaterialPageRoute(
                 builder: (context) =>
-                    new TravalNoteDetail(package: packageList[index])));
+                    new TravalNoteDetail(note: travelNoteList[index])));
       },
     );
   }
@@ -46,7 +46,7 @@ class _TravelNotePageState extends State<TravelNotePage> {
                   crossAxisCount: 2,
                   crossAxisSpacing: 10,
                 ),
-                itemCount: packageList == null ? 0 : packageList.length,
+                itemCount: travelNoteList == null ? 0 : travelNoteList.length,
                 itemBuilder: (context, index) {
                   // if(packageList[index].virus != '') {
                   return _getRealImageButton(index);

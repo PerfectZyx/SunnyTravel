@@ -77,7 +77,7 @@ class AboutusPage extends StatelessWidget {
                 ),
                 Container(
                   width: size.width,
-                  child: Text('南开大学软件学院2017级本科生\n负责分工：\n电子邮箱：759677946@qq.com',
+                  child: Text('南开大学软件学院2017级本科生\n负责分工：完成用户游记和游记详情页面制作\n电子邮箱：759677946@qq.com',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 16.0)),
                 ),
