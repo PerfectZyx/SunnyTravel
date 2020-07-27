@@ -39,16 +39,18 @@ class _TravelNotePageState extends State<TravelNotePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: GridView.builder(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              crossAxisSpacing: 10,
-            ),
-            itemCount: packageList == null ? 0 : packageList.length,
-            itemBuilder: (context, index) {
-              // if(packageList[index].virus != '') {
-                return _getRealImageButton(index);
-              // }
-            }));
+        body: Padding(
+            padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+            child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 10,
+                ),
+                itemCount: packageList == null ? 0 : packageList.length,
+                itemBuilder: (context, index) {
+                  // if(packageList[index].virus != '') {
+                  return _getRealImageButton(index);
+                  // }
+                })));
   }
 }

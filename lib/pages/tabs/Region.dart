@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sunnytravel_app/components/ImageButton.dart';
 
+import '../SearchArticle.dart';
+
 class RegionPage extends StatefulWidget {
   RegionPage({Key key}) : super(key: key);
 
@@ -11,67 +13,35 @@ class _RegionPageState extends State<RegionPage> {
   var _regionList = {
     "华中": {
       'pressedImage': "images/central.jpg",
-      'unpressedImage': "images/central.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('1');
-      }
+      'unpressedImage': "images/central.jpg"
     },
     "华北": {
       'pressedImage': "images/north.jpg",
-      'unpressedImage': "images/north.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('2');
-      }
+      'unpressedImage': "images/north.jpg"
     },
     "华南": {
       'pressedImage': "images/south.jpg",
-      'unpressedImage': "images/south.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('3');
-      }
+      'unpressedImage': "images/south.jpg"
     },
     "华东": {
       'pressedImage': "images/east.jpg",
-      'unpressedImage': "images/east.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('4');
-      }
+      'unpressedImage': "images/east.jpg"
     },
     "东北": {
       'pressedImage': "images/northeast.jpg",
-      'unpressedImage': "images/northeast.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('5');
-      }
+      'unpressedImage': "images/northeast.jpg"
     },
     "西北": {
       'pressedImage': "images/northwest.jpg",
-      'unpressedImage': "images/northwest.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('6');
-      }
+      'unpressedImage': "images/northwest.jpg"
     },
     "西南": {
       'pressedImage': "images/southwest.jpg",
-      'unpressedImage': "images/southwest.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('7');
-      }
+      'unpressedImage': "images/southwest.jpg"
     },
     "港澳台": {
       'pressedImage': "images/hkmt.jpg",
-      'unpressedImage': "images/hkmt.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('8');
-      }
+      'unpressedImage': "images/hkmt.jpg"
     }
   };
 
@@ -93,7 +63,13 @@ class _RegionPageState extends State<RegionPage> {
             fit: BoxFit.cover),
         unpressedImage: Image.asset(this._regionList[name]['unpressedImage'],
             fit: BoxFit.cover),
-        onTap: this._regionList[name]['onTap']);
+        onTap: (){
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) =>
+                  new SearchArticle(searchKey: [name, "", "0", name],)));
+        });
   }
 
   @override

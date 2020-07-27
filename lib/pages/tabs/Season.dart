@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:sunnytravel_app/pages/NoteDetail.dart';
 import 'package:sunnytravel_app/components/ImageButton.dart';
+import 'package:sunnytravel_app/pages/SearchArticle.dart';
+import 'package:sunnytravel_app/utils/packages.dart';
 
 class SeasonPage extends StatefulWidget {
   SeasonPage({Key key}) : super(key: key);
@@ -11,35 +14,19 @@ class _SeasonPageState extends State<SeasonPage> {
   var _seasonList = {
     '春': {
       'pressedImage': "images/spring.jpg",
-      'unpressedImage': "images/spring.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('1');
-      }
+      'unpressedImage': "images/spring.jpg"
     },
     "夏": {
       'pressedImage': "images/summer.jpg",
-      'unpressedImage': "images/summer.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('2');
-      }
+      'unpressedImage': "images/summer.jpg"
     },
     "秋": {
       'pressedImage': "images/autumn.jpg",
-      'unpressedImage': "images/autumn.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('3');
-      }
+      'unpressedImage': "images/autumn.jpg"
     },
     "冬": {
       'pressedImage': "images/winter.jpg",
-      'unpressedImage': "images/winter.jpg",
-      // ignore: top_level_function_literal_block
-      'onTap': () {
-        print('4');
-      }
+      'unpressedImage': "images/winter.jpg"
     }
   };
 
@@ -62,9 +49,11 @@ class _SeasonPageState extends State<SeasonPage> {
         unpressedImage: Image.asset(this._seasonList[name]['unpressedImage'],
             fit: BoxFit.cover),
         onTap: () {
-//          Navigator.push(context, MaterialPageRoute(builder: (context) {
-//            return SecondScreen();
-//          }));
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) =>
+                      new SearchArticle(searchKey: ["", name, "0", name])));
         });
   }
 
