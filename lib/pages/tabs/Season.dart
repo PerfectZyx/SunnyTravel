@@ -44,7 +44,7 @@ class _SeasonPageState extends State<SeasonPage> {
           ),
         ],
         width: size.width,
-        height: size.height * 0.2,
+        height: size.height * 0.25,
         pressedImage: Image.asset(this._seasonList[name]['pressedImage'],
             fit: BoxFit.cover),
         unpressedImage: Image.asset(this._seasonList[name]['unpressedImage'],

@@ -23,6 +23,7 @@ class _SearchArticle extends State<SearchArticle> {
   _SearchArticle(this.articleList, this.name);
 
   ImageButton _getRealImageButton(int index) {
+    Size size = MediaQuery.of(context).size;
     return ImageButton(
       children: <Widget>[
         Text(
@@ -34,8 +35,8 @@ class _SearchArticle extends State<SearchArticle> {
           ),
         ),
       ],
-      width: 250,
-      height: 190,
+      width: size.width,
+      height: size.height * 0.25,
       pressedImage: Image.asset(this.articleList[index].img, fit: BoxFit.cover),
       unpressedImage:
           Image.asset(this.articleList[index].img, fit: BoxFit.cover),
