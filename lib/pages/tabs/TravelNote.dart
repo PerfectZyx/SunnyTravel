@@ -10,7 +10,9 @@ class TravelNotePage extends StatefulWidget {
 }
 
 class _TravelNotePageState extends State<TravelNotePage> {
+
   ImageButton _getRealImageButton(int index) {
+    Size size = MediaQuery.of(context).size;
     return ImageButton(
       children: <Widget>[
         Text(
@@ -22,8 +24,8 @@ class _TravelNotePageState extends State<TravelNotePage> {
           ),
         ),
       ],
-      width: 250,
-      height: 190,
+      width: size.width,
+      height: size.height * 0.25,
       pressedImage: Image.asset(travelNoteList[index].img, fit: BoxFit.cover),
       unpressedImage: Image.asset(travelNoteList[index].img, fit: BoxFit.cover),
       onTap: () {

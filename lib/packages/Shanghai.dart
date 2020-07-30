@@ -10,7 +10,8 @@ class ShanghaiPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('上海之旅'),
       ),
-      body: Column(
+      body: SingleChildScrollView(
+      child:Column(
         children: <Widget>[
           Container(
               height: 200,
@@ -66,7 +67,7 @@ class ShanghaiPage extends StatelessWidget {
                 textAlign: TextAlign.left, style: TextStyle(fontSize: 16.0)),
           ),
         ],
-      ),
+      ),),
     );
   }
 }

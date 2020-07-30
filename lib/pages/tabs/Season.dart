@@ -31,6 +31,7 @@ class _SeasonPageState extends State<SeasonPage> {
   };
 
   ImageButton _getRealImageButton(String name) {
+    Size size = MediaQuery.of(context).size;
     return ImageButton(
         children: <Widget>[
           Text(
@@ -42,8 +43,8 @@ class _SeasonPageState extends State<SeasonPage> {
             ),
           ),
         ],
-        width: 500,
-        height: 140,
+        width: size.width,
+        height: size.height * 0.2,
         pressedImage: Image.asset(this._seasonList[name]['pressedImage'],
             fit: BoxFit.cover),
         unpressedImage: Image.asset(this._seasonList[name]['unpressedImage'],

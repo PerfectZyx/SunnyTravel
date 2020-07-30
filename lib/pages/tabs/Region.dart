@@ -46,6 +46,7 @@ class _RegionPageState extends State<RegionPage> {
   };
 
   ImageButton _getRealImageButton(String name) {
+    Size size = MediaQuery.of(context).size;
     return ImageButton(
         children: <Widget>[
           Text(
@@ -57,8 +58,8 @@ class _RegionPageState extends State<RegionPage> {
             ),
           ),
         ],
-        width: 250,
-        height: 190,
+        width: size.width,
+        height: size.height * 0.25,
         pressedImage: Image.asset(this._regionList[name]['pressedImage'],
             fit: BoxFit.cover),
         unpressedImage: Image.asset(this._regionList[name]['unpressedImage'],

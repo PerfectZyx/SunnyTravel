@@ -10,7 +10,8 @@ class MohePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('漠河之旅'),
       ),
-      body: Column(
+      body: SingleChildScrollView(
+      child:Column(
         children: <Widget>[
           Container(
               height: 200,
@@ -61,7 +62,7 @@ class MohePage extends StatelessWidget {
                 textAlign: TextAlign.left, style: TextStyle(fontSize: 16.0)),
           ),
         ],
-      ),
+      ),),
     );
   }
 }

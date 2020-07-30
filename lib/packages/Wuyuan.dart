@@ -10,7 +10,8 @@ class WuyuanPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('婺源之旅'),
       ),
-      body: Column(
+      body: SingleChildScrollView(
+      child:Column(
         children: <Widget>[
           Container(
               height: 200,
@@ -66,7 +67,7 @@ class WuyuanPage extends StatelessWidget {
                 textAlign: TextAlign.left, style: TextStyle(fontSize: 16.0)),
           ),
         ],
-      ),
+      ),),
     );
   }
 }

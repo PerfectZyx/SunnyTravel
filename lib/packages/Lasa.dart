@@ -10,7 +10,8 @@ class LasaPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('拉萨之旅'),
       ),
-      body: Column(
+      body: SingleChildScrollView(
+        child:Column(
         children: <Widget>[
           Container(
               height: 200,
@@ -61,6 +62,7 @@ class LasaPage extends StatelessWidget {
                 textAlign: TextAlign.left, style: TextStyle(fontSize: 16.0)),
           ),
         ],
+      ),
       ),
     );
   }

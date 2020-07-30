@@ -18,13 +18,16 @@ class _SwiperPageState extends State<SwiperPage> {
     {"url": "images/qinghai.jpg"},
     {"url": "images/tianjin.jpg"},
   ];
-
+  
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
         body: Column(
           children: <Widget>[
             Container(
+              height: size.height * 0.3,
+              width: size.width,
               child: AspectRatio(
                 aspectRatio: 16/9,
                 child: Swiper(
@@ -40,9 +43,9 @@ class _SwiperPageState extends State<SwiperPage> {
               )
             ),
             SizedBox(
-              height: 10.0,
+              height: size.height * 0.02,
               child:  Container(
-                height: 10.0,
+                height: size.height * 0.02,
                 color: Color(0xffffffff),
               ),
             ),
@@ -59,9 +62,9 @@ class _SwiperPageState extends State<SwiperPage> {
                       ),
                     ),
                   ],
-                  width: 200,
-                  height: 140,
-                  paddingTop: 5,
+                  width: size.width * 0.49,
+                  height: size.height * 0.22,
+                  paddingTop: size.height * 0.005,
                   pressedImage: Image.asset(
                     "images/wy.jpg",
                   ),
@@ -79,11 +82,11 @@ class _SwiperPageState extends State<SwiperPage> {
                   },
                 ),
                 SizedBox(
-                  width: 11.3,
-                  height: 140.0,
+                  width: size.width * 0.02,
+                  height: size.height * 0.22,
                   child:  Container(
-                    width: 11.0,
-                    height: 160.0,
+                    width: size.width * 0.02,
+                    height: size.height * 0.22,
                     color: Color(0xffffffff),
                   ),
                 ),
@@ -98,9 +101,9 @@ class _SwiperPageState extends State<SwiperPage> {
                       ),
                     ),
                   ],
-                  width: 200,
-                  height: 140,
-                  paddingTop: 5,
+                  width: size.width * 0.49,
+                  height: size.height * 0.22,
+                  paddingTop: size.height * 0.005,
                   pressedImage: Image.asset(
                     "images/mh.jpg",
                   ),
@@ -120,9 +123,9 @@ class _SwiperPageState extends State<SwiperPage> {
               ],
             ),
             SizedBox(
-              height: 10.0,
+              height: size.height * 0.02,
               child:  Container(
-                height: 10.0,
+                height: size.height * 0.02,
                 color: Color(0xffffffff),
               ),
             ),
@@ -139,9 +142,9 @@ class _SwiperPageState extends State<SwiperPage> {
                       ),
                     ),
                   ],
-                  width: 200,
-                  height: 140,
-                  paddingTop: 5,
+                  width: size.width * 0.49,
+                  height: size.height * 0.22,
+                  paddingTop: size.height * 0.005,
                   pressedImage: Image.asset(
                     "images/ls.jpg",
                   ),
@@ -159,11 +162,11 @@ class _SwiperPageState extends State<SwiperPage> {
                   },
                 ),
                 SizedBox(
-                  width: 11.3,
-                  height: 140.0,
+                  width: size.width * 0.02,
+                  height: size.height * 0.22,
                   child:  Container(
-                    width: 11.0,
-                    height: 160.0,
+                    width: size.width * 0.02,
+                    height: size.height * 0.22,
                     color: Color(0xffffffff),
                   ),
                 ),
@@ -178,9 +181,9 @@ class _SwiperPageState extends State<SwiperPage> {
                       ),
                     ),
                   ],
-                  width: 200,
-                  height: 140,
-                  paddingTop: 5,
+                  width: size.width * 0.49,
+                  height: size.height * 0.22,
+                  paddingTop: size.height * 0.005,
                   pressedImage: Image.asset(
                     "images/sh.jpg",
                   ),
